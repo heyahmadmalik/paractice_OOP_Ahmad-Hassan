@@ -1,0 +1,97 @@
+print("Ahmad Hassan")
+print("BAIM-S20-010")
+print(" make table by using while loop and get table number, starting range and ending range from user\n")
+
+tablenumber = int(input("Enter a number: "))
+
+upperRANGE = int(input("Enter a lower limit: "))
+
+lowerRANGE = int(input("Enter a upper limit: "))
+
+i = upperRANGE
+
+while (i <= lowerRANGE):
+
+    print (i,"*",tablenumber,"=",i*tablenumber)
+
+    i=i+1
+
+print("===============================================================================================")
+
+print("Cehck number is even or odd\n")
+
+num = int(input("Number for Check: "))
+
+if num % 2 == 0:
+
+    print("Number is even")
+
+else:
+
+    print("Number is Odd")
+
+print("========================================================================")
+
+
+print("Cehck number is even or odd\n")
+
+num = int(input("Number for Check: "))
+
+if num % 2 == 0:
+
+    print("Number is even")
+
+else:
+
+    print("Number is Odd")
+
+print("===========================================================")
+
+
+print("Check how many ODD numbers in given range by using for loop\n")
+
+rang1 =int(input("ENTER RANGE 1 = "))
+
+rang2 =int(input("ENTER RANGE 2 = "))
+
+for num in range(rang1 , rang2 + 1):
+
+    if num % 2 != 0:
+
+        print(num, end=" \n")
+
+print("===========================================================")
+
+print("Check how many EVEN numbers in given range by using for loop\n")
+
+rang1 =int(input("ENTER RANGE 1 = "))
+
+rang2 =int(input("ENTER RANGE 2 = "))
+
+for num in range(rang1 , rang2 + 1):
+
+    if num % 2 == 0:
+
+        print(num, end=" \n")
+
+print("===========================================================")
+
+print("Check a number is prime or not\n")
+
+num = int(input("Enter a number: "))
+
+if num > 1:
+
+    for i in range(2, num):
+
+        if (num % i) == 0:
+
+            print(num, "is not a prime number")
+
+            break
+    else:
+
+        print(num, "is a prime number")
+else:
+
+    print(num, "is not a prime number")
