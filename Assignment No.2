@@ -1,0 +1,70 @@
+class University:
+    uniName = " "
+    uniCity = " "
+    uniAge  = " "
+
+    def uni_function(self):
+        print("University Name  " + str(self.uniName))
+        print("University City  " + str(self.uniCity))
+        print("University Age   " + str(self.uniAge))
+        print("--------------------------------------------")
+
+
+entery1 = University()
+entery1.uniName = "Superior University"
+entery1.uniCity = "Lahore"
+entery1.uniAge  =  1000
+
+
+entery2 = University()
+
+entery2.uniName = "University Of Lahore"
+entery2.uniCity = "Lahore"
+entery2.uniAge  =  500
+
+
+entery3 = University()
+entery3.uniName = "Ripha University"
+entery3.uniCity = "Lahore"
+entery3.uniAge  =  250
+
+
+Universitylist = [entery1, entery2, entery3]
+
+for eachuni in Universitylist:
+    eachuni.uni_function()
+
+print("-----------------------------------------------------------------------------")
+
+
+class Teacher:
+    Name     = ""
+    Subject = " "
+    Salary   = ""
+
+    def Teacher_function(self):
+        print("Tecaher Name    " + str(self.Name))
+        print("Teacher Subject " + str(self.Subject))
+        print("Teacher Salary  " + str(self.Salary))
+        print("--------------------------------------------")
+
+
+Tchentery1 = Teacher()
+Tchentery1.Name    = "Prof.Qasim Riaz"
+Tchentery1.Subject = "Object Oriented Programming"
+Tchentery1.Salary  =  100000000000000000000000000
+
+Tchentery2 = Teacher()
+Tchentery2.Name     = "Ahmad Hassan"
+Tchentery2.Subject  = "Urdu"
+Tchentery2.Salary   =  1000
+
+Tchentery3 = Teacher()
+Tchentery3.Name     = "Sir Ali Farooq"
+Tchentery3.Subject  = "Pasto , Farsi, Balochii"
+Tchentery3.Salary   =  10000000000000000000000
+
+TeacherList = [Tchentery1, Tchentery2, Tchentery3]
+
+for eachTeacher in TeacherList:
+    eachTeacher.Teacher_function()
