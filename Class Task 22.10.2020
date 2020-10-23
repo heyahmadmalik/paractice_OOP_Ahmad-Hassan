@@ -1,0 +1,22 @@
+class vehicle:
+    no_of_wheels = 0
+    no_of_lights = 0
+
+    def introduce_vehicle(self):
+        print("I am a simple vehicle with " + self.no_of_wheels + " wheels" )
+        print("I have " + self.no_of_lights + " lights")
+
+    def __add__(self,other):
+        temp1 = self.no_of_lights + other.no_of_wheels
+        temp2 = self.no_of_lights + self.no_of_wheels
+        return [temp1,temp2]
+
+tracter = vehicle()
+tarali  = vehicle()
+tracter.no_of_wheels = 2
+tracter.no_of_lights = 4
+tarali.no_of_wheels  = 4
+tarali.no_of_lights  = 2
+
+tractertarali = tracter + tarali
+print("No of wheels of tractertarali " + int(tractertarali))
