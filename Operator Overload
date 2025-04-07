@@ -1,4 +1,4 @@
-
+//operator overload
 class vehicle:
     no_of_wheels = 0
     no_of_lights = 0
